@@ -4,9 +4,13 @@ on:
   push:
     paths:
       - "README*.md"
+      - "check-readme-sync.mjs"
+      - ".github/workflows/readme-sync.yml"
   pull_request:
     paths:
       - "README*.md"
+      - "check-readme-sync.mjs"
+      - ".github/workflows/readme-sync.yml"
 
 jobs:
   check-sync:

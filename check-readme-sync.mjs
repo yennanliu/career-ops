@@ -63,7 +63,7 @@ for (const file of TRANSLATIONS) {
   } else {
     failed = true;
     console.log(`  ❌ ${file}: ${count} sections (missing ${diff} vs main)`);
-    console.log(`     Hint: main sections by index —`);
+    console.log(`     Last ${diff} main section(s) for reference (titles may differ in translation):`);
     mainSections.forEach((s, i) => {
       if (i >= count) console.log(`  ⚠️   ${i + 1}. "${s}"`);
     });
